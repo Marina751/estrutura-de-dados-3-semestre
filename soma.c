@@ -8,5 +8,5 @@ int main(){
     scanf("%d", &B);
     X=A+B;
     printf("A soma dos numeros é: %d", X);
-    getchar();
+    pause ();
 }
