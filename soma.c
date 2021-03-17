@@ -8,5 +8,6 @@ int main(){
     scanf("%d", &B);
     X=A+B;
     printf("A soma dos numeros é: %d", X);
-    pause ();
+    system("pause");
+    return 0;
 }
