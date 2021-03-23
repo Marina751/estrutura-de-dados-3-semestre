@@ -10,4 +10,4 @@ int main(){
     printf("A soma dos numeros é: %d", X);
     system("pause");
     return 0;
-}
+} 
