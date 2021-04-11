@@ -1,0 +1,55 @@
+/*Analise os algoritmos Bubble Sort e Selection Sort considerando:
+a. Tempo de execução;
+b. Quantidade de trocas entre os elementos.
+
+Primeiro, quando eu fui fazer o estudo do bubble sort, eu acho bem engenhoso. 
+Pode demorar mais? Sim
+Faz sentido? Completamente
+
+Ora, o programa faz a busca de ordem crescente dentro do vetor que ele vai ordenar; 
+Ao meu ver, é muito mais organizado ir por essa rota de pesquisa.
+Sinceramente, ir aleatoriamente dentro do vetor e procurar o elemento de maior valor é desorganizado.
+Em uma pespectiva de ordem, se fosse pra ordenar pessoas, usar do metodo de quem chegou primeiro e ir ordenando pela ordem de chagada 
+faz mais sentido, nao?
+
+Quanto a quantidade de trocas, tambem achei que, metodicamente, foi mais bem feito. 
+Se meu vetor tem x elementos, logicamente, a quantidade de vezes que vou fazer a busca deve ser menor que a quantidade de elementos dentro do vetor.
+
+Agora, ok, o tempo pode ser mais demorado? Pode.
+Faz sentido pra mim e eu usaria outra vez? Faz e sim, usaria.
+Talvez achem que não é TÃO otimizado? Não precisam achar. Nao É tão otimizado.
+
+Não vou julgar a escolha do programador - a não ser que ele use selection sort.
+
+No selection sort, a ordenação dele é super confusa.
+1) Eu pego o primeiro elemento do vetor
+2) veja em comparação com o proximo elemento
+3) ele é maior que o anterior? 
+se sim: troque a posição do menor com o maior, e peque o proximo elemento em comparação com o primeiro
+se não, peque o proximo elemento e compare.
+*mas lembrando que esse elemento pode ser menor apenas para o ultimo elemento do vetor*
+rode outra vez o vetor, pra fazer o mesmo processo;
+
+Quer dizer que eu vou rodar o vetor completo caso nao der certo, e depois, caso nao der certo OUTRA VEZ, faz tudo NOVAMENTE?
+Muito obrigada, mas nao. Fico com bubble sort mesmo.
+
+Em questão de numero:
+
+bubble sort: 9/10
+vantagens: faz sentido; faz a ordenação de forma logica; segue uma linha de raciocinio capaz de ser explicada e entendida com facilidade; é simples.
+desvantagens: tempo que demora pra rodar todos os numeros do vetor, mas considerando que eu demoraria muito mais fazendo a mao, nao vou reclamar.
+
+
+selesction sort: 1/10 
+vantagens: ??
+desvantagems: nao faz sentido pra mim.
+
+Professor, deixando aqui um ultimo parecer, eu prefiro esse seu metodo de atividades (uma por semana, pra ser entregue no domingo). 
+Me força, mesmo nao querendo, a escrever codigo em um cronograma organizado. Por favor, nao mude. 
+Alias, ter atividade pra ser entregue em uma data exata é mais tranquilo pra ensinar e pra aprender.
+
+Boa correção pro senhor,
+Sds,
+
+Marina.
+*/
