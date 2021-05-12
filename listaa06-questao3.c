@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct ed{
-    struct e *ip; //priority
+    struct e *ip; //prioridade
     struct e *in; //normal
 
     int topo;
@@ -39,10 +39,10 @@ int main(){
         }
 
         if(pilha == 1 && filap == 1 || filap == 1 && fila == 1 || pilha == 1 && fila == 1) printf("not sure\n");
-        else if(filap) printf("priority queue\n");
-        else if(fila) printf("queue\n");
-        else if(pilha) printf("stack\n");
-        else printf("impossible\n");
+        else if(filap) printf("fila de prioridade\n");
+        else if(fila) printf("fila\n");
+        else if(pilha) printf("grupo\n");
+        else printf("impossivel\n");
 
         free(edx);
     }

@@ -9,21 +9,21 @@ struct Cartas 	{	char carta;
 				};
 typedef struct Cartas TCartas;
 
-struct descrPilha 	{ 	TCartas *topo, *final;
+struct descricaoPilha 	{ 	TCartas *topo, *final;
 						int qtd;
 					};
-typedef struct descrPilha DPilha;
+typedef struct descricaoPilha DPilha;
 
 int main()
 {
-	int vDescart[55], Cqtd, c=0, k=0;
+	int descarte[55], Cqtd, c=0, k=0;
 	DPilha	descritor;
 	TCartas *aux;
 
 	while (scanf("%d", &Cqtd) && Cqtd != 0)
 	{
 		for(c=0; c < 55; c++)
-			vDescart[c] = 0;
+			descarte[c] = 0;
 
 		k = 0;
 
@@ -51,7 +51,7 @@ int main()
 		{
 			aux = descritor.topo;
 			descritor.topo = aux->prox;
-			vDescart[k] = aux->carta;
+			descarte[k] = aux->carta;
 			free(aux);
 			descritor.qtd--;
 			k++;
@@ -61,14 +61,14 @@ int main()
 			descritor.topo = aux;
 		}
 
-		printf("Discarded cards:");
+		printf("Cartas discartadas");
 		for(c=0; c < k; c++)
 		{
-			printf(" %d", vDescart[c]);
+			printf(" %d", descarte[c]);
 			if(c != k-1)
 				printf(",");
 		}
-		printf("\nRemaining card: %d\n", descritor.final->carta);
+		printf("\nCartas que sobram: %d\n", descritor.final->carta);
 	}
 
 	return 0;
